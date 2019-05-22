@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chessboard</title>
+    <script src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/chessboard.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='chessboard.css') }}">
+</head>
+<body>
+<div class="new" href="/new">New Game</div>
+<form class="save" action="/home" method="POST">
+    <input class="gameName" type="text" name="gameName"/>
+    <input class="saveSubmit" type="submit" value="Save"/>
+</form>
+<a class="home" href="/home">Back Home</a>
+<div class="current">
+    <div>CURRENT PLAYER:</div>
+    <div class="player">♔</div>
+</div>
+<div class="chessboard">
+    <div class="numbering number">8</div>
+    <div class="square white a8">{{ board[0][7] }}</div>
+    <div class="square black b8">{{ board[1][7] }}</div>
+    <div class="square white c8">{{ board[2][7] }}</div>
+    <div class="square black d8">{{ board[3][7] }}</div>
+    <div class="square white e8">{{ board[4][7] }}</div>
+    <div class="square black f8">{{ board[5][7] }}</div>
+    <div class="square white g8">{{ board[6][7] }}</div>
+    <div class="square black h8">{{ board[7][7] }}</div>
+
+    <div class="numbering number">7</div>
+    <div class="square black a7">{{ board[0][6] }}</div>
+    <div class="square white b7">{{ board[1][6] }}</div>
+    <div class="square black c7">{{ board[2][6] }}</div>
+    <div class="square white d7">{{ board[3][6] }}</div>
+    <div class="square black e7">{{ board[4][6] }}</div>
+    <div class="square white f7">{{ board[5][6] }}</div>
+    <div class="square black g7">{{ board[6][6] }}</div>
+    <div class="square white h7">{{ board[7][6] }}</div>
+
+    <div class="numbering number">6</div>
+    <div class="square white a6">{{ board[0][5] }}</div>
+    <div class="square black b6">{{ board[1][5] }}</div>
+    <div class="square white c6">{{ board[2][5] }}</div>
+    <div class="square black d6">{{ board[3][5] }}</div>
+    <div class="square white e6">{{ board[4][5] }}</div>
+    <div class="square black f6">{{ board[5][5] }}</div>
+    <div class="square white g6">{{ board[6][5] }}</div>
+    <div class="square black h6">{{ board[7][5] }}</div>
+
+    <div class="numbering number">5</div>
+    <div class="square black a5">{{ board[0][4] }}</div>
+    <div class="square white b5">{{ board[1][4] }}</div>
+    <div class="square black c5">{{ board[2][4] }}</div>
+    <div class="square white d5">{{ board[3][4] }}</div>
+    <div class="square black e5">{{ board[4][4] }}</div>
+    <div class="square white f5">{{ board[5][4] }}</div>
+    <div class="square black g5">{{ board[6][4] }}</div>
+    <div class="square white h5">{{ board[7][4] }}</div>
+
+    <div class="numbering number">4</div>
+    <div class="square white a4">{{ board[0][3] }}</div>
+    <div class="square black b4">{{ board[1][3] }}</div>
+    <div class="square white c4">{{ board[2][3] }}</div>
+    <div class="square black d4">{{ board[3][3] }}</div>
+    <div class="square white e4">{{ board[4][3] }}</div>
+    <div class="square black f4">{{ board[5][3] }}</div>
+    <div class="square white g4">{{ board[6][3] }}</div>
+    <div class="square black h4">{{ board[7][3] }}</div>
+
+    <div class="numbering number">3</div>
+    <div class="square black a3">{{ board[0][2] }}</div>
+    <div class="square white b3">{{ board[1][2] }}</div>
+    <div class="square black c3">{{ board[2][2] }}</div>
+    <div class="square white d3">{{ board[3][2] }}</div>
+    <div class="square black e3">{{ board[4][2] }}</div>
+    <div class="square white f3">{{ board[5][2] }}</div>
+    <div class="square black g3">{{ board[6][2] }}</div>
+    <div class="square white h3">{{ board[7][2] }}</div>
+
+    <div class="numbering number">2</div>
+    <div class="square white a2">{{ board[0][1] }}</div>
+    <div class="square black b2">{{ board[1][1] }}</div>
+    <div class="square white c2">{{ board[2][1] }}</div>
+    <div class="square black d2">{{ board[3][1] }}</div>
+    <div class="square white e2">{{ board[4][1] }}</div>
+    <div class="square black f2">{{ board[5][1] }}</div>
+    <div class="square white g2">{{ board[6][1] }}</div>
+    <div class="square black h2">{{ board[7][1] }}</div>
+
+    <div class="numbering number">1</div>
+    <div class="square black a1">{{ board[0][0] }}</div>
+    <div class="square white b1">{{ board[1][0] }}</div>
+    <div class="square black c1">{{ board[2][0] }}</div>
+    <div class="square white d1">{{ board[3][0] }}</div>
+    <div class="square black e1">{{ board[4][0] }}</div>
+    <div class="square white f1">{{ board[5][0] }}</div>
+    <div class="square black g1">{{ board[6][0] }}</div>
+    <div class="square white h1">{{ board[7][0] }}</div>
+
+    <div class="numbering placeholder"></div>
+    <div class="numbering letter">a</div>
+    <div class="numbering letter">b</div>
+    <div class="numbering letter">c</div>
+    <div class="numbering letter">d</div>
+    <div class="numbering letter">e</div>
+    <div class="numbering letter">f</div>
+    <div class="numbering letter">g</div>
+    <div class="numbering letter">h</div>
+</div>
+<div class="message">
+</div>
+</body>
+</html>

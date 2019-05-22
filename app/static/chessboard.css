@@ -1,0 +1,130 @@
+* {
+    text-align: center !important;
+    margin: auto !important;
+}
+
+.save {
+    background-color: #121011;
+    border: none;
+    color: white;
+    margin: 5px 5px;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    font: normal small-caps 20px fantasy;
+    display: inline-block;
+}
+
+.gameName {
+    float: left;
+    width: 68%;
+}
+
+.saveSubmit {
+    float: left;
+    width: 30%;
+}
+
+.new {
+    background-color: #121011;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    margin: 5px 5px;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    font: normal small-caps 20px fantasy;
+    letter-spacing: 10px;
+    display: inline-block;
+}
+
+.new:hover {
+    cursor: pointer;
+}
+
+.home {
+    background-color: #121011;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    margin: 5px 5px;
+    width: 32%;
+    text-align: center;
+    text-decoration: none;
+    font: normal small-caps 20px fantasy;
+    letter-spacing: 10px;
+}
+
+.home:hover {
+    cursor: pointer;
+}
+
+.player {
+    font: bold small-caps 20px serif;
+    display: inline-block;
+}
+
+.current {
+    font: normal small-caps 15px serif;
+}
+
+.chessboard {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-top: 20px solid #333;
+    border-right: 20px solid #333;
+}
+
+.square {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.numbering {
+    float: left;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #333;
+    color: white;
+}
+
+.number {
+    padding-top: 20px;
+    width: 20px;
+    height: 40px;
+}
+
+.letter {
+    width: 60px;
+    height: 20px;
+}
+
+.placeholder {
+    width: 20px;
+    height: 20px;
+}
+
+.black {
+    background-color: #999;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.target {
+    outline-offset: -10px;
+    outline: 5px solid #ff0000;
+}
+
+.target:hover {
+    cursor: pointer;
+}
